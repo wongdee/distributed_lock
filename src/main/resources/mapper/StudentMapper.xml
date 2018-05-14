@@ -4,4 +4,8 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.wongdee.lock.domain.StudentMapper">
 	
+	<select id="getStudentById" parameterType="long" resultType="com.wongdee.lock.domain.Student">
+		select * from student where sid = #{sid}
+	</select>
+	
 </mapper>

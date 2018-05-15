@@ -24,4 +24,8 @@ public class StudentService {
 		return stuJson.toJSONString();
 	}
 
+	public Integer updateStudent(Student student, Integer version) {
+		return studentMapper.updateStudent(student, version);
+	}
+
 }

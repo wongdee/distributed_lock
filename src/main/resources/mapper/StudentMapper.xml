@@ -8,4 +8,8 @@
 		select * from student where sid = #{sid}
 	</select>
 	
+	<update id="updateStudent">
+		update student set scode = #{student.scode}, version = #{student.version} where sid = #{student.sid} and version = #{version}
+	</update>
+	
 </mapper>
